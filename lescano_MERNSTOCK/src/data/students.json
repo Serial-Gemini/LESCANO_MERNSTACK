@@ -2,25 +2,33 @@
 
 {
     "id": 1,
-    "name": "John",
-    "age": 21
+    "name": "Gemini",
+    "age": 20
 }
 ,
 { 
     "id": 2,
-    "name": "Jonathan",
+    "name": "Caine",
     "age": 28
 }
 ,
 {
     "id": 3,
-    "name": "Gemini",
-    "age": 20
+    "name": "Marion",
+    "age": 32
 }
-
+,
 {
     "id": 4,
-    "name"
+    "name": "Pomni",
+    "age": 24
+    
+}
+,
+{
+    "id": 5,
+    "name": "Jax",
+    "age": "29"
 }
 
 ]

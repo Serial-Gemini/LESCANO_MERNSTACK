@@ -3,17 +3,18 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Student from "./components/Student";
 
-export default function App() {
+function App() {
   return (
     
     <BrowserRouter>
-      <div className="min-h-screen-bg-gray-50">
-        <nav>
-          <Link></Link>
-          <Link></Link>
-        </nav>
-      </div>
+      <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/students" element={<Students />} />
+          <Route path="/student/:id" element={<StudentDetails />} />
+        </Routes>
     </BrowserRouter>
+
   );
 }
 
