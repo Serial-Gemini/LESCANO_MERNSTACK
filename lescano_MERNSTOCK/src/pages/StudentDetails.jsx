@@ -1,11 +1,15 @@
 import { useParams, Link } from "react-router-dom";
 import students from "../data/students.json";
 
-export default function StudentDetails() {
+export default function StudentDetails({
+
+    name,
+    id,
+    age
+}) {
 
     const { id } = useParams();
-    const studentId = parseInt(id);
-    const student = students.find(s => s.id === studentId);
+    const student = students.find((student) => student.id === parseInt(id));
 
     if (!student) {
 

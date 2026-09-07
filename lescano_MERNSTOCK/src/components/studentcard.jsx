@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function StudentCard({ name, age, bday, studName, course }) {
+export const studentCard = ({ id, name, age }) => {
   return (
     <div className="w-full max-w-sm bg-slate-800 border border-slate-700 rounded-2xl shadow-xl overflow-hidden transform transition duration-300 hover:scale-105">
       {/* Top Accent Bar */}
@@ -13,7 +13,7 @@ function StudentCard({ name, age, bday, studName, course }) {
             {name}
           </h2>
           <p className="text-xs font-semibold uppercase tracking-wider text-sky-400 mt-1">
-            {course} Student
+            {age}
           </p>
         </div>
 
@@ -25,23 +25,17 @@ function StudentCard({ name, age, bday, studName, course }) {
           <div className="flex justify-between items-center">
             <span className="text-slate-400 font-medium">Alias:</span>
             <span className="text-slate-200 font-semibold bg-slate-900 px-2.5 py-1 rounded-md text-xs border border-slate-700">
-              {studName}
+              {id}
             </span>
           </div>
 
-          <div className="flex justify-between items-center">
-            <span className="text-slate-400 font-medium">Age:</span>
-            <span className="text-slate-200 font-medium">{age} years old</span>
-          </div>
-
-          <div className="flex justify-between items-center">
-            <span className="text-slate-400 font-medium">Birthday:</span>
-            <span className="text-slate-200 font-medium">{bday}</span>
-          </div>
+          <Link to={'/student/${id}'}>
+          See Full Details
+          </Link>
         </div>
       </div>
     </div>
   );
 }
 
-export default StudentCard;
+export default studentCard;
