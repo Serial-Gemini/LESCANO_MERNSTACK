@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function StudentCard({ name, age, bday, studName, course }) {
   return (
     <div className="w-full max-w-sm bg-slate-800 border border-slate-700 rounded-2xl shadow-xl overflow-hidden transform transition duration-300 hover:scale-105">
