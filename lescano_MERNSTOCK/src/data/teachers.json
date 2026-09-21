@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "name": "Amiel",
+        "employeeNumber": "F004",
+        "department": "DIT",
+        "specialization": "Programming",
+        "gender": "Male"
+    },
+
+    {
+        "id": 2,
+        "name": "Waylon",
+        "employeeNumber": "F005",
+        "department": "DIT",
+        "specialization": "Programming",
+        "gender": "Male"
+    },
+
+    {
+        "id": 3,
+        "name": "Pius",
+        "employeeNumber": "F006",
+        "department": "DIT",
+        "specialization": "Programming",
+        "gender": "Male"
+    }
+]

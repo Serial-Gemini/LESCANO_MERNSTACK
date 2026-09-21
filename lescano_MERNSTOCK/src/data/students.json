@@ -3,32 +3,8 @@
 {
     "id": 1,
     "name": "Gemini",
-    "age": 20
-}
-,
-{ 
-    "id": 2,
-    "name": "Caine",
-    "age": 28
-}
-,
-{
-    "id": 3,
-    "name": "Marion",
-    "age": 32
-}
-,
-{
-    "id": 4,
-    "name": "Pomni",
-    "age": 24
-    
-}
-,
-{
-    "id": 5,
-    "name": "Jax",
-    "age": "29"
+    "studentNumber": "202400023",
+    "gender": "Male'"
 }
 
 ]
