@@ -50,12 +50,12 @@ export default function AddTeachers({ onAddTeacher }) {
 
           <label>
             Department
-            <input 
-              type="text" 
-              value={department} 
-              onChange={(e) => setDepartment(e.target.value)} 
-              placeholder="Enter Department" 
-            />
+            <select value={department} onChange={(e) => setDepartment(e.target.value)}>
+              <option value="" disabled>Select Department</option>
+              <option value="Computer Science">Computer Science</option>
+              <option value="Mathematics">Mathematics</option>
+              <option value="Physics">Physics</option>
+            </select>
           </label>
           
           <label>
